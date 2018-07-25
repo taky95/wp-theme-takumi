@@ -3,6 +3,7 @@ $args = array(
    'cat'=>1,3,
     'posts_per_page'=> 7
 );
+$style_directry= get_template_directory_uri(); 
 
 $query = new WP_Query( $args );
 while ( $query->have_posts() ) : $query->the_post();
@@ -14,7 +15,7 @@ while ( $query->have_posts() ) : $query->the_post();
 		if (has_post_thumbnail() )  {
 			echo get_the_post_thumbnail(get_the_ID(), array(100,100), ['class' => 'img-featured']);
 		} else {
-			echo '<img class="img-featured" src="/wp-content/themes/ameba/images/no-image.png">';
+			echo "<img class='img-featured' src='$style_directry/images/no-image.png'>";
 		} 
 	?>
 	<div class="post-excerpt">

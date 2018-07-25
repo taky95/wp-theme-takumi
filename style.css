@@ -14,7 +14,7 @@ body{
     margin:0;
     padding:0;
     background-color: #2f3437;
-    background-image: url("/wp-content/themes/ameba/images/grass.jpg");
+    background-image: url("images/grass.jpg");
     background-repeat: repeat-y;
     /*font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;*/
     font-family: 'Ubuntu', sans-serif;

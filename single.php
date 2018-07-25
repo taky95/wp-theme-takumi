@@ -19,7 +19,7 @@ window.onload=function(){
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 	<div id="content">
-	<img id="title-icon" src="/wp-content/themes/ameba/images/pen.png" align="left"/>
+	<img id="title-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pen.png" align="left"/>
 	<h1><?php the_title(); ?></h1>
 	<hr>
 	<br>

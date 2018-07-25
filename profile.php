@@ -1,10 +1,10 @@
 <div id="profile" class="side">
     <figure>
-    <img src="/wp-content/themes/ameba/images/bg-side.png" />
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bg-side.png" />
     <figcaption><h2>Profile</h2></figcaption>
     </figure>
     <div class="profile-box">
-    <img id="profile-img" src="/wp-content/themes/ameba/images/profile.jpg" />
+    <img id="profile-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/profile.jpg" />
     <h3>Takumi</h3>
     </div>
     <hr>

@@ -17,4 +17,3 @@ while ( $query->have_posts() ) : $query->the_post();
 <?php
 endwhile;
 ?>
-

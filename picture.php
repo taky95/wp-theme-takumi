@@ -77,7 +77,7 @@ Template Name: Picture
 	});
 	</script>
 	<div id="aboutpage">
-		<img id="photo-title" src="/wp-content/themes/ameba/images/photo-title.png"/>
+		<img id="photo-title" src="<?php echo get_stylesheet_directory_uri(); ?>/images/photo-title.png"/>
 		</br>
 		
 		<?php echo display_images_from_media_library(); ?>
