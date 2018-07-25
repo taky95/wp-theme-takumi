@@ -1,0 +1,566 @@
+/* --------------------------------------------------------
+Theme Name: myPortfolio
+Style Sheet for Takumi's Awesome Web
+
+version: 1.0
+last modified: 01.24.2018 by Takumi Minohara
+author: Takumi Minohara
+email: takumi.minohara08@gmail.com
+website: http://www.takumiminohara.site
+----------------------------------------------------------*/
+
+/* Main Theme */
+body{
+    margin:0;
+    padding:0;
+    background-color: #2f3437;
+    background-image: url("/wp-content/themes/ameba/images/grass.jpg");
+    background-repeat: repeat-y;
+    /*font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header Theme */
+#header{
+    margin: 0 auto;
+    width: auto;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slideshow{
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+#menu ul{
+    margin:0;
+    padding:0;
+}
+
+#menu li{
+    padding: 0 15px;
+    display: inline;
+    font-size: 1rem;
+    border: 1px;
+    border-color: grey;
+}
+
+#menu li a{
+    text-decoration: none;
+}
+
+#menu a, #menu a:visited{
+     color: white;
+}
+
+#menu .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#menu li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#menu{
+    margin:0 auto;
+    background-color:black;
+    color:white;
+    text-align: right;
+}
+
+#aboutpage{
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding:10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+/* Index Page Theme*/
+
+.post{
+    display: flex;
+    align-items: center;
+}
+
+.img-featured{
+    margin: 5px;
+}
+
+.post-excerpt{
+    
+}
+
+#container{
+    margin: 0 20px;
+    width: auto;
+    height: 100%;
+}
+
+#content{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding:10px 10px 10px 10px;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+    
+#content hr{
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+#content h1{
+    display: inline;
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */   
+}
+
+#content a{
+    color: #0B82D0;
+}
+
+#content a:hover{
+    color: #42A1DF;
+}
+#content ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+#content li:before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 2em;
+    position: relative;
+}
+
+.trans-img{
+    position: relative;
+    opacity: 0.3;
+    float: right;
+    width: 10%;
+    height: auto;
+}
+
+
+/* Side Bar */
+#profile{
+    margin-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#profile figure{
+    position: relative;
+    margin:0 auto;
+    
+}
+
+#profile figure img{
+    border-radius: 5px;
+}
+
+#profile figcaption{
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 20px;
+}
+
+.profile-box{
+    display: flex;
+}
+
+#profile-img{
+    height: 100px;
+    width: 100px;
+    /*display: inline;*/
+    margin: 5px;
+    float:left;
+    margin-right: 30px; 
+}
+
+#profile hr{
+    background-color: #fff;
+	border-top: 2px dotted #8c8b8b;
+}
+
+.side{
+    width: 20%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    clear: left;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#searchsubmit{
+    background-color: #2f3437;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 18px;
+    box-shadow: 2px 3px 3px #888888;
+    border: 0;
+    margin-top:8px;
+    transition: box-shadow 0.5s;
+}
+
+#searchsubmit:hover{
+    box-shadow: 1px 2px 3px white;
+    opacity: 1;
+}
+
+.widget_title{
+    border-bottom: 1px dashed; 
+    border-bottom-color:#061a4f; 
+}
+
+/* Form Page Theme */
+#formpage{
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    margin: 50px;
+    padding: 50px;
+}
+
+#formpage div{
+    margin:5px;
+}
+
+#formpage label{
+    margin-right: 10px;
+    float: left;
+    width: 100px;
+}
+
+#formpage table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formpage table th, td{
+}
+
+#formpage table th{
+    padding: 10px;
+    text-align: right;
+    width:50px;
+    background-color: #333333;
+    color: white;
+    border-bottom-color: #5c75bf;
+}
+
+#formpage table td{
+    padding:10px;
+    line-height: 1px;
+    text-align: right;
+    width:250px;
+    border-color: #e2e2e2;
+}
+
+#formpage p{
+    font-size: .8em;
+    color: #5e5e5e;
+}
+
+.button-center{
+    text-align: center;
+}
+
+.submit-button{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80px;
+    height:30px;
+    border-color: #061a4f;
+    background-color: #061a4f;
+    color: white;
+    font-size:1em;
+    border-radius: 3px;
+}
+
+.submit-button:active{
+    background-color: #0D2566;
+    width: 78px;
+    height: 28;
+}
+
+.submit-button:hover{
+    background-color: #0D2566;
+}
+
+/* Picture Page Theme*/
+#photo-title{
+    width: 400px;
+    height: 100%;
+}
+
+#title-icon{
+    margin-right: 15px;
+    display: inline;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.pics {
+    opacity: 0;
+    max-height: 100%;
+    max-width: 100%;
+    /*display: block;*/
+    width: 100%;
+    height: auto;
+    transform: translateZ(0);
+}
+
+.grid-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.grid-column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.grid-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .grid-column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .grid-column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Single Page Theme */
+/* Comment View */
+.commentlist{
+    margin-bottom: 70px;  
+}
+
+.commentlist .comment{
+    border-style: hidden;
+    border-width: 1px;
+    border-color:blue; 
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px -1px #888888;
+    list-style: none;
+    padding: 0px 0px 10px 0px;
+    padding-bottom: 60px;
+}
+
+.comment-author{
+    background: #E5EBFB;
+    color: #061439;
+    padding-left: 10px; 
+    font-size: 15px;
+    border-top:2px solid #A2B2E3;
+}
+
+.comment-author img{
+    vertical-align: middle;
+}
+
+.comment-meta{
+    background: linear-gradient(#E5EBFB, white);
+    color: #061439;
+    /*border-color: #5C75BF;
+    border-style: solid;
+    border:0px 3px 3px 3px;*/
+    padding-bottom: 2px;
+    padding-left: 10px; 
+    font-size: 12px;
+}
+
+.comment p{
+    padding-left: 10px;
+}
+
+ol.commentlist{
+    list-style:none;
+    padding-left: 0;
+}
+
+.comment article {
+    padding-bottom:2.79rem;
+}
+ 
+a.comment-reply-link,
+a.comment-edit-link {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-size: 0.928571429rem;
+    line-height: 1.846153846;
+    text-decoration:none;
+}
+ 
+a.comment-reply-link:hover,
+a.comment-edit-link:hover {
+    color: #90bed1;
+}
+
+#reply-title {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-size: x-large;
+}
+
+#commentpage{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    padding:10px 10px 10px 10px;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+/* Comment Form */
+.comment-form{
+    width: 720px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.comment-form label{
+    float: left;
+}
+
+/*
+.comment-form input{
+    float: right;
+}
+*/
+
+.comment-notes{
+    color: #5B5B5B;
+    font-size: small;
+    float: right;
+    display: block;
+}
+
+.comment-form-author{
+    width: 50%;
+}
+
+.comment-form-email{
+    width: 50%;
+}
+
+.comment-form-url{
+    display: none;
+}
+
+.comment-form-cookies-consent{
+    color: #5B5B5B;
+    font-size: small;
+    float: right;
+    position: relative;
+    top: 135px;
+    left: -35px;
+}
+
+/*.comment-form-comment{
+}*/
+
+.comment-form-comment textarea{
+    border-color: #cccccc;
+    border-radius:5px;
+    position: relative;
+    top: -20px;
+}
+
+.reply { 
+    float:right;
+    margin:0 10px 10px 0;
+    text-align:center;
+    background-color: #2f3437;
+    border:1px solid #55737D;
+    border-radius:3px;
+    padding:3px;
+    width:50px;
+}
+
+#submit.submit{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+#submit.submit:hover{
+    background-color: #3E3E3E;
+    color:white;
+    border-radius: 4px;
+} 
+
+/* Footer Theme*/
+#footer{
+    background-color: #061a4f;
+    /*padding-bottom: 20px;*/
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:15px;
+    width:100%;
+    color: white;
+    font-size: smaller;
+}
+
+#footer p{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
