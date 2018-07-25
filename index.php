@@ -1,5 +1,6 @@
 <html>
 <head>
+    <title><?php bloginfo('name');?></title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/blog.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -41,7 +42,6 @@
         <li><a href="<?php echo get_permalink( get_page_by_title("Form") ); ?>">Contact</a></li>
     </ul>
 </div>
-<div id="bg"></div>
 </div>     
 </body>
 </html>
