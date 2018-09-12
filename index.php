@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/blog.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
     
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon-32x32.png" sizes="32x32">
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,100|Amatic+SC|Fascinate" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed|Bungee+Shade" rel="stylesheet">
