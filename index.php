@@ -16,30 +16,27 @@
 </head>
 <body>
     <!-- nav -->
-         <nav role="navigation">
-          <div id="menuToggle">
-           <input type="checkbox" />
-           
-           <span></span>
-           <span></span>
-           <span></span>
-           
-           <ul id="menu">
-            <a href="#" id="link1"><li>About</li></a>
-            <a href="#" id="link2"><li>Works</li></a>
-            <a href="#" id="link3"><li>Videos & Photos</li></a>
-            <a href="#" id="link4"><li>Contact</li></a>
-           </ul>
-           
-          </div>
-         </nav>
-    <!--<div id="side"></div>-->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+                <a href="#" id="link1"><li>About</li></a>
+                <a href="#" id="link2"><li>Works</li></a>
+                <a href="#" id="link3"><li>Videos & Photos</li></a>
+                <a href="#" id="link4"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    
     <div id="main">
-        
         <h1 id="myName">
             Takumi Minohara
         </h1>
-
         <div id="scrollDown">
             <a href="#">&#8609;</a>
         </div>
@@ -47,12 +44,16 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/skillsets-min.png"/>
         </div>
     </div>
+    
     <hr class="grow-start">
-    <div id="content"> 
+    
+    <div id="content">
+        <!-- About Me --> 
         <div class="slides" id="about">
             <h1>I am...</h1>
             <img id="bgImage" src="<?php echo get_template_directory_uri(); ?>/images/bg-glass.png"/>       
             <img id="profile" src="<?php echo get_template_directory_uri(); ?>/images/thumbs/profile1.jpg" />
+            
             <div data-emergence="hidden" class="text-profile">
                 a web developer, photographer, video editor, snowboarder, and traveller. My focus in coding is
                 to create and provide the user-friendly, intuitive, and fun user experience. For most of the project
@@ -69,28 +70,26 @@
                     <span class="caption"><a href="<?php echo get_template_directory_uri(); ?>/resume.pdf" target="_blank">View My Resume &gt;</a></span>
                 </button>
             </div>
-    
-            
         </div>
     
+        <!-- Works --> 
         <div class="slides" id="portfolio">
             <h1>Stuff I was involved</h1>
             <!-- vertical table -->
             <table id="websites" class="table row-border">
-                <!--img-->
+                <!--img row-->
                 <tr>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot.png"/ alt="img1"></td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/thumb1.png"/ alt="img2"></td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot2.png"/ alt="img3"></td>
                 </tr>
-                <!--title-->
+                <!-- title -->
                 <tr>
                     <td><a href="#">Simple Prallax Website</a></td>
                     <td><a href="#">Student Queue Project</a></td>
                     <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/">Cap Stone Project</a></td>
                 </tr>
-            
-                <!--link-->
+                <!-- link -->
                 <tr>
                     <td>
                         <button class="image-button light outline">
@@ -111,7 +110,7 @@
                         </button>
                     </td> 
                 </tr>
-                
+                <!-- description -->
                 <tr>
                     <td><p>Parallax Web site template designed for simple use as introductory page for small business owners.</p></td>
                     <td><p>A web application developed to provide efficient support in communication between students and teachers. </p></td>
@@ -120,6 +119,7 @@
             </table>
         </div>
         
+        <!-- Videos & Photos -->
         <div class="slides" id="Videos">
             <h1>Video & Photo Editing</h1>
             <div class="tiles-grid size-2 size-lg-6">
@@ -135,7 +135,6 @@
                 </div>
                 
                 <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile2.JPG" ></div>
-                
             
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-left">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
@@ -178,25 +177,30 @@
                 <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile9.jpg" ></div>
             </div>
         </div>
-    <div class="slides" id="contact">
-        <h1>Contact Me</h1>
-        <p>
-            <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJ9GHaX7N47Nto7-MtD7Akt8XAHseKHTbaT5l669-_WnnpuQ/viewform?embedded=true" width="640" height="896" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </p>
+        
+        <!-- Contact From -->
+        <div class="slides" id="contact">
+            <h1>Contact Me</h1>
+            <p>
+                <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJ9GHaX7N47Nto7-MtD7Akt8XAHseKHTbaT5l669-_WnnpuQ/viewform?embedded=true" width="640" height="896" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </p>
             <div class="socializer a sr-32px sr-opacity sr-icon-grey sr-bg-none sr-pad"><span class="sr-linkedin sr-text-in"><a href="https://www.linkedin.com/in/takumiminohara/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i><span class="text">LinkedIn</span></a></span><span class="sr-googleplus sr-text-in"><a href="https://plus.google.com/116423591282612430207" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i><span class="text">Google Plus</span></a></span><span class="sr-github sr-text-in"><a href="https://github.com/taky95" target="_blank" title="Github"><i class="fa fa-github"></i><span class="text">Github</span></a></span><span class="sr-email sr-text-in"><a href="mailto:takumi.minohara08@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope"></i><span class="text">Email</span></a></span></div>
+        </div>
+        
+        <!-- scroll button -->
+        <div class="content">
+            <div id="scrollTop">
+                <a href="#">&#9650;</a>
+            </div>
+        </div> 
+    </div><!-- End of Content -->     
+    
+    <!-- Footer -->
+    <div id="copyright">
+        <p>&copy;2018 Takumi</p>
     </div>
     
-    <div class="content">
-       <div id="scrollTop">
-        <a href="#">&#9650;</a>
-       </div>
-     </div> 
-</div>     
-
-<div id="copyright">
-    <p>&copy;2018 Takumi</p>
-</div>
-    
+    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/emergence.min.js"></script>

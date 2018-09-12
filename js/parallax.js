@@ -31,18 +31,17 @@ $(document).ready(function(){
        $.scrollTo("#slide1", 800); 
     }); 
     
-    
     $("#skillsets").delay(1000).fadeIn(800);
     
     $(window).scroll(function() {
-    if ($(".text-profile").attr("data-emergence") == "hidden") {
-        $("#profile").removeClass("fadeIn").addClass("animated fadeOut faster");
-        $(".text-profile").removeClass("fadeInUp").addClass("animated fadeOut faster");
-    } else {
-        $("#profile").removeClass("fadeOut faster").addClass("animated fadeIn");
-        $(".text-profile").removeClass("fadeOut").addClass("animated fadeInUp faster");
-    }
-});
+        if ($(".text-profile").attr("data-emergence") == "hidden") {
+            $("#profile").removeClass("fadeIn").addClass("animated fadeOut faster");
+            $(".text-profile").removeClass("fadeInUp").addClass("animated fadeOut faster");
+        } else {
+            $("#profile").removeClass("fadeOut faster").addClass("animated fadeIn");
+            $(".text-profile").removeClass("fadeOut").addClass("animated fadeInUp faster");
+        }
+    });
 });
 
 $(document).scroll(function() {
