@@ -85,9 +85,9 @@
                 </tr>
                 <!-- title -->
                 <tr>
-                    <td><a href="#">Simple Prallax Website</a></td>
+                    <td><a href="#">Simple Parallax Website</a></td>
                     <td><a href="#">Student Queue Project</a></td>
-                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/">Cap Stone Project</a></td>
+                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/">Capstone Project</a></td>
                 </tr>
                 <!-- link -->
                 <tr>
