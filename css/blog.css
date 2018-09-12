@@ -2,7 +2,7 @@
 Style Sheet for Takumi's Awesome Web
 
 version: 1.0
-last modified: 07.20.2018 by Takumi Minohara
+last modified: 09.11.2018 by Takumi Minohara
 author: Takumi Minohara
 email: takumi.minohara08@gmail.com
 website: http://takumiminohara.site
@@ -166,6 +166,11 @@ nav{
     transform:none;
     
 }
+#bgImage{
+
+    width: 50%;
+
+}
 
 #main{
     background: url("../images/topbg.jpg") 100% 0 no-repeat fixed;
@@ -182,6 +187,7 @@ nav{
     font-size: 500%;
     font-family: 'Bungee Shade', cursive;
     margin-bottom: 0px;
+    user-select:none;
 }
 
 #content{
@@ -192,44 +198,6 @@ nav{
     margin: 0;
 }
 
-/*
-#content{
-    padding:50px;
-    position: relative;
-    z-index: 1;
-}
-@keyframes bg-side{
-    from{min-height: 0%}
-    to{min-height: 100%}
-}
-
-@keyframes zoomIn{
-    from{opacity: 0; width: 500px}
-    to{opacity: 1; width: 700px}
-}
-
-#side{
-    min-width: 420px;
-     The image used
-    background-color: #333333;
-    float: left;
-    position: absolute;
-    z-index: 0;
-    animation-name: bg-side;
-    animation-duration: 1.2s;
-    animation-delay: .3s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-#title span{
-    margin: 5px;
-    font-size: 12em;
-    color: white;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-}
-*/
 hr {
     border: none;
     border-top: 3px double #D4AF37;
@@ -264,6 +232,7 @@ hr:after {
     width: 50px;
     padding: 5px;
     margin: 0 auto;
+    top: 100px;
 }
 
 #scrollDown a{
@@ -275,9 +244,10 @@ hr:after {
 
 #skillsets{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 250px;
     display: none;
     user-select:none;
+    margin-bottom: 100px;
 }
 
 #skillsets img{
@@ -287,15 +257,30 @@ hr:after {
 }
 
 .slides{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #about{
-    margin-bottom:250px;
+    max-height: 900px;
 }
-#text-profile{
+
+
+.text-profile{
+    position: relative;
+    z-index: 1;
+    top: -300px;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 120%;
 }
+
+#resume{
+   margin-top: 30px;
+}
+
+#resume a{
+    text-decoration: none;
+}
+
 #profile{
     margin:30px;
     width:200px;
@@ -306,6 +291,10 @@ hr:after {
     top:-100px;
 }
 
+#portfolio{
+    margin-top: 200px;
+    margin-bottom: 550px;
+}
 #websites td{
     height: 50px;
     text-align:center;
@@ -357,6 +346,28 @@ td > p {
 .socializer{
     float: right;
 }
+
+#scrollTop{
+    position: fixed;
+    top: 950px;
+    right: 80px;
+    height: 70px;
+    width: 50px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 5px;
+    padding: 4px;
+    margin: 30px;
+    box-shadow: 5px 5px 10px -5px rgba(110,110,110,0.6);
+    display: none;
+}
+
+#scrollTop a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 50px;
+    color: darkslategray;
+}
+
 #copyright{
     font-size: 14px; 
     text-align: center;
@@ -366,86 +377,3 @@ td > p {
 #copyright p{
     margin: 0;
 }
-/*
-#title{
-    -moz-user-select: none; /* Firefox 
-    -ms-user-select: none; /* Internet Explorer 
-    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) 
-    -webkit-user-select: none; /* Chrome, Safari, and Opera 
-    -webkit-touch-callout: none; /* Disable Android and iOS callouts
-}
-
-#menu{
-    color: white;
-    text-align: right;
-    position: absolute;
-    margin: 25px;
-}
-
-#menu ul{
-    list-style-type: none;
-}
-
-#menu li{
-    margin-bottom: 30px;
-}
-
-#menu a{
-    text-decoration: none;
-    color: white;
-    font-size: 4em;
-    font-family: 'Amatic SC', cursive;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom ease-in-out .5s;
-}
-
-#menu a:hover{
-    border-color: white;
-}
-
-#content-right{
-    opacity: 0;
-    position: relative;
-    white-space: nowrap;
-    left: -100px;
-    animation-name: zoomIn;
-    animation-delay: 1.8s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@media only screen and (max-width: 1366px) {
-    #content-right {
-        left: -500px;
-        top: 180px;
-    }
-}
-
-#me{
-    width: 700px;
-    float: right;
-    margin:10px;
-    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-    position: absolute;
-    top: -300px;
-    left: 1080px;
-    z-index:1;
-}
-
-#sub{
-    font-family:'Alegreya Sans SC', sans-serif;
-    font-weight: 100;
-    color: white;
-    font-size: 4em;
-    float: right;
-    position: absolute;
-    z-index: 2;
-    left: 1200px;
-    -moz-user-select: none; /* Firefox 
-    -ms-user-select: none; /* Internet Explorer 
-    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) 
-    -webkit-user-select: none; /* Chrome, Safari, and Opera 
-    -webkit-touch-callout: none; /* Disable Android and iOS callouts
-}
-
-*/

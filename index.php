@@ -5,23 +5,15 @@
     <title><?php bloginfo('name');?></title>
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/blog.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script href="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>-->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
+    
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png" sizes="32x32">
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,100|Amatic+SC|Fascinate" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed|Bungee+Shade" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<!--
-    <script>
-    /* global $ FLOATING_TEXT */
-        $(document).ready(function(){
-            FLOATING_TEXT.float();
-        })
-        
-    </script>
--->
 <body>
     <!-- nav -->
          <nav role="navigation">
@@ -44,18 +36,9 @@
     <!--<div id="side"></div>-->
     <div id="main">
         
-        <h1>
+        <h1 id="myName">
             Takumi Minohara
         </h1>
-    <!--
-    <div class="floating_text run-animation" data-float-duration='6'
-         data-float-translate='5' id="title">
-        <h1>Takumi</h1>
-    </div></br>
-    <div class="floating_text run-animation" data-float-duration='6'
-         data-float-translate='5' id="title">
-        <h1>Minohara</h1>
-    </div>-->
 
         <div id="scrollDown">
             <a href="#">&#8609;</a>
@@ -68,15 +51,23 @@
     <div id="content"> 
         <div class="slides" id="about">
             <h1>I am...</h1>
-                    
+            <img id="bgImage" src="<?php echo get_template_directory_uri(); ?>/images/bg-glass.png"/>       
             <img id="profile" src="<?php echo get_template_directory_uri(); ?>/images/thumbs/profile1.jpg" />
-            <div class="text-profile">
-                a professional web designer, photographer, video editor, snowboarder, and traveler. My focus in coding is to 
-                create and provide user-friendly, intuitive, and fun user experience. I also enjoying editing photos and videos, thus
-                I love going to new places and shoot. Discovering different side of the world I've never seen always helped me a new angle
-                to look and that's what keeps me catering a flexible solution to any problems you might have.
-                <br>
+            <div data-emergence="hidden" class="text-profile">
+                a web developer, photographer, video editor, snowboarder, and traveller. My focus in coding is
+                to create and provide the user-friendly, intuitive, and fun user experience. For most of the project
+                I was involved in, I worked as front-end designing interfaces of the applications and websites. I also enjoy
+                editing photos and videos, thus I love going to new places and shoot. Discovering different world I've never
+                seen always helped me looking for a new angle to problems and that's what keeps me catering flexible solutions
+                applicable to any unique situations. My comfortable coding languages are HTML/CSS, javascript, python, PHP, react and so on. 
+                <br />
+                <br />
+                For further details, please check out my resume:<br/>
                 
+                <button id="resume" class="image-button light large rounded outline">
+                    <span class="mif-file-text icon"></span>
+                    <span class="caption"><a href="<?php echo get_template_directory_uri(); ?>/resume.pdf" target="_blank">View My Resume &gt;</a></span>
+                </button>
             </div>
     
             
@@ -104,19 +95,19 @@
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-github icon"></span>
-                            <span class="caption"><a href="https://github.com/taky95/simple-parallax-website-template">Git Hub</a></span>
+                            <span class="caption"><a href="https://github.com/taky95/simple-parallax-website-template" target="_blank">Git Hub</a></span>
                         </button>
                     </td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-github icon"></span>
-                            <span class="caption"><a href="https://github.com/ARealHumanBean/student-queue-project">Git Hub</a></span>
+                            <span class="caption"><a href="https://github.com/ARealHumanBean/student-queue-project" target="_blank">Git Hub</a></span>
                         </button>
                     </td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-gitlab icon"></span>
-                            <span class="caption"><a href="https://gitlab.com/camosunwebcommittee/tech-symposium">Git Lab</a></span>
+                            <span class="caption"><a href="https://gitlab.com/camosunwebcommittee/tech-symposium" target="_blank">Git Lab</a></span>
                         </button>
                     </td> 
                 </tr>
@@ -194,45 +185,30 @@
         </p>
             <div class="socializer a sr-32px sr-opacity sr-icon-grey sr-bg-none sr-pad"><span class="sr-linkedin sr-text-in"><a href="https://www.linkedin.com/in/takumiminohara/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i><span class="text">LinkedIn</span></a></span><span class="sr-googleplus sr-text-in"><a href="https://plus.google.com/116423591282612430207" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i><span class="text">Google Plus</span></a></span><span class="sr-github sr-text-in"><a href="https://github.com/taky95" target="_blank" title="Github"><i class="fa fa-github"></i><span class="text">Github</span></a></span><span class="sr-email sr-text-in"><a href="mailto:takumi.minohara08@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope"></i><span class="text">Email</span></a></span></div>
     </div>
-    <!--<div class="floating_text run-animation" data-float-duration='6'
-         data-float-translate='5' id="title">
-        <h1>Takumi</h1>
-    </div></br>
-    <div class="floating_text run-animation" data-float-duration='6'
-         data-float-translate='5' id="title">
-        <h1>Minohara</h1>
-    </div>-->
-<!--
-<div id="content-right">
-    <p id="sub">&lt;!-- Hello World --&gt;</p>
-    <img id="me" src="<?php bloginfo('template_directory'); ?>/images/me.png" /> 
     
-</div>-->
-    
-    <!--
-    <div id="menu">
-        <ul>  
-            <li><a href="<?php echo esc_url( home_url( '/' ) );?>">Home</a></li>
-            <li><a href="<?php echo get_permalink( get_page_by_title("News") ); ?>">Blog</a></li>  
-            <li><a href="<?php echo get_permalink( get_page_by_title("About") ); ?>">About Me</a></li>  
-            <li><a href="<?php echo get_permalink( get_page_by_title("Picture") ); ?>">Pictures</a></li>  
-            <li><a href="<?php echo get_permalink( get_page_by_title("Form") ); ?>">Contact</a></li>
-        </ul>
-    </div>
-    -->
+    <div class="content">
+       <div id="scrollTop">
+        <a href="#">&#9650;</a>
+       </div>
+     </div> 
 </div>     
 
 <div id="copyright">
     <p>&copy;2018 Takumi</p>
 </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/emergence.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/separate.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/floating_text.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/Vide-master/dist/jquery.vide.min.js"></script>
+    <script>
+    /*global emergence*/
+        emergence.init();
+    </script>
 </body>
 </html>
