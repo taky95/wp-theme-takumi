@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=980">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Takumi Minohara's personal portfolio website.">
     <title><?php bloginfo('name');?></title>
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/blog.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/query.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/balloon.css">
     
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon-32x32.png" sizes="32x32">
 
@@ -15,10 +18,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    
     <!-- nav -->
     <nav role="navigation">
         <div id="menuToggle">
-            <input type="checkbox" />
+            <input type="checkbox" id="hmbgr"/>
             
             <span></span>
             <span></span>
@@ -54,13 +58,8 @@
             <img id="bgImage" src="<?php echo get_template_directory_uri(); ?>/images/bg-glass.png"/>       
             <img id="profile" src="<?php echo get_template_directory_uri(); ?>/images/thumbs/profile1.jpg" />
             
-            <div data-emergence="hidden" class="text-profile">
-                a web developer, photographer, video editor, snowboarder, and traveller. My focus in coding is
-                to create and provide the user-friendly, intuitive, and fun user experience. For most of the project
-                I was involved in, I worked as front-end designing interfaces of the applications and websites. I also enjoy
-                editing photos and videos, thus I love going to new places and shoot. Discovering different world I've never
-                seen always helped me looking for a new angle to problems and that's what keeps me catering flexible solutions
-                applicable to any unique situations. My comfortable coding languages are HTML/CSS, javascript, python, PHP, react and so on. 
+            <div data-emergence="hidden" class="text-profile balloon">
+                I am a web developer, photographer, video editor, snowboarder, and traveller. My focus in coding is to create user-friendly, intuitive, and functional design for websites and web applications. In the past projects, I worked on UI/UX helping to have a better navigation and to make the site more informative for targeted users. Besides the coding, I enjoy experiencing a new culture and learn about their history by travelling and taking photos. The languages I'm familiar are HTML5/CSS3, Javascript, jQuery, PHP, Python, and Ruby on Rails.
                 <br />
                 <br />
                 For further details, please check out my resume:<br/>
@@ -74,55 +73,53 @@
     
         <!-- Works --> 
         <div class="slides" id="portfolio">
-            <h1>Stuff I was involved</h1>
+            <h1>Projects/Applications</h1>
             <!-- vertical table -->
-            <table id="websites" class="table row-border">
+            <table id="websites" data-emergence="hidden" class="table row-border">
                 <!--img row-->
                 <tr>
-                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot.png"/ alt="img1"></td>
-                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/thumb1.png"/ alt="img2"></td>
-                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot2.png"/ alt="img3"></td>
-                </tr>
-                <!-- title -->
-                <tr>
                     <td><a href="#">Simple Parallax Website</a></td>
-                    <td><a href="#">Student Queue Project</a></td>
-                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/">Capstone Project</a></td>
-                </tr>
-                <!-- link -->
-                <tr>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot.png"/ alt="img1"></td>
+                    
+                    <td><p>Parallax Web site template designed for simple use as introductory page for small business owners.</p></td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-github icon"></span>
                             <span class="caption"><a href="https://github.com/taky95/simple-parallax-website-template" target="_blank">Git Hub</a></span>
                         </button>
                     </td>
+                </tr>
+                <!-- title -->
+                <tr>
+                    <td><a href="#">Student Queue Project</a></td>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/thumb1.png"/ alt="img2"></td>
+                    <td><p>A web application developed to provide efficient support in communication between students and teachers. </p></td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-github icon"></span>
                             <span class="caption"><a href="https://github.com/ARealHumanBean/student-queue-project" target="_blank">Git Hub</a></span>
                         </button>
                     </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/">Capstone Project</a></td>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot2.png"/ alt="img3"></td>
+                    <td><p>Introductry page for capstone project 2017.</p></td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-gitlab icon"></span>
                             <span class="caption"><a href="https://gitlab.com/camosunwebcommittee/tech-symposium" target="_blank">Git Lab</a></span>
                         </button>
-                    </td> 
-                </tr>
-                <!-- description -->
-                <tr>
-                    <td><p>Parallax Web site template designed for simple use as introductory page for small business owners.</p></td>
-                    <td><p>A web application developed to provide efficient support in communication between students and teachers. </p></td>
-                    <td><p>Introductry page for capstone project 2017.</p></td>
+                    </td>
                 </tr>
             </table>
         </div>
         
         <!-- Videos & Photos -->
-        <div class="slides" id="Videos">
+        <div class="slides clear" id="videos">
             <h1>Video & Photo Editing</h1>
-            <div class="tiles-grid size-2 size-lg-6">
+            <div class="tiles-grid size-lg-6">
                 <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile1.JPG" ></div>
                 
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-down">
@@ -145,7 +142,7 @@
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" class="bg-light" style="width: 310px; height: 310px;"
+                <div data-role="tile" data-size="large" class="bg-light" 
                 data-vide-bg="<?php echo get_template_directory_uri(); ?>/images/tiles/tile.mp4" >
                      <div class="pressMe fg-dark d-flex flex-justify-center flex-align-center">
                         <p class="text-center ">
@@ -184,7 +181,7 @@
             <p>
                 <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJ9GHaX7N47Nto7-MtD7Akt8XAHseKHTbaT5l669-_WnnpuQ/viewform?embedded=true" width="640" height="896" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </p>
-            <div class="socializer a sr-32px sr-opacity sr-icon-grey sr-bg-none sr-pad"><span class="sr-linkedin sr-text-in"><a href="https://www.linkedin.com/in/takumiminohara/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i><span class="text">LinkedIn</span></a></span><span class="sr-googleplus sr-text-in"><a href="https://plus.google.com/116423591282612430207" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i><span class="text">Google Plus</span></a></span><span class="sr-github sr-text-in"><a href="https://github.com/taky95" target="_blank" title="Github"><i class="fa fa-github"></i><span class="text">Github</span></a></span><span class="sr-email sr-text-in"><a href="mailto:takumi.minohara08@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope"></i><span class="text">Email</span></a></span></div>
+            <div class="socializer a sr-32px sr-opacity sr-icon-grey sr-bg-none sr-pad"><span class="sr-linkedin sr-text-in"><a href="https://www.linkedin.com/in/takumiminohara/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i><span class="text">LinkedIn</span></a></span><span class="sr-github sr-text-in"><a href="https://github.com/taky95" target="_blank" title="Github"><i class="fa fa-github"></i><span class="text">Github</span></a></span><span class="sr-email sr-text-in"><a href="mailto:takumi.minohara08@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope"></i><span class="text">Email</span></a></span></div>
         </div>
         
         <!-- scroll button -->

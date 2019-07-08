@@ -1,5 +1,6 @@
 /*global $*/
 $(document).ready(function(){
+    var hmbgr= $("#hmbgr");
     
     $("#myName").addClass("animated rubberBand delay-1s")
     
@@ -13,18 +14,22 @@ $(document).ready(function(){
     
     $("#link1").on("click", function(){
         $.scrollTo("#about", 800, {margin: true});
+        hmbgr.prop("checked", false);
     });
     
     $("#link2").click(function(){
-        $.scrollTo("#portfolio", 800, {margin: true});
+        $.scrollTo("#portfolio",  {duration:800, offset:-50});
+        hmbgr.prop("checked", false);
     });
     
     $("#link3").click(function(){
-        $.scrollTo("#Videos", 800);
+        $.scrollTo("#videos", {duration:800, offset:-50});
+        hmbgr.prop("checked", false);
     });  
     
     $("#link4").click(function(){
-        $.scrollTo("#contact", 800);
+        $.scrollTo("#contact",  {duration:800, offset:-50});
+        hmbgr.prop("checked", false);
     });  
     
     $("#scrollTop a").click(function(){
@@ -40,6 +45,16 @@ $(document).ready(function(){
         } else {
             $("#profile").removeClass("fadeOut faster").addClass("animated fadeIn");
             $(".text-profile").removeClass("fadeOut").addClass("animated fadeInUp faster");
+        }
+    });
+    
+    $(window).scroll(function() {
+        if ($("#websites").attr("data-emergence") == "hidden") {
+            $("#websites").removeClass("zoomIn").addClass("animated zoomOut faster");
+            $("websites").removeClass("zoomOut").addClass("animated zoomIn faster");
+        } else {
+            $("#websites").removeClass("zoomOut faster").addClass("animated zoomIn");
+            $("#websites").removeClass("zoomOut").addClass("animated zoomIn faster");
         }
     });
 });
