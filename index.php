@@ -13,23 +13,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a Takumi Minohara's personal portfolio website.">
-    <title><?php bloginfo('name');?></title>
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/blog.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/query.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/balloon.css">
     
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon-32x32.png" sizes="32x32">
-
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,100|Amatic+SC|Fascinate" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed|Bungee+Shade" rel="stylesheet">
+    <title><?php bloginfo('name');?></title>
+    
+    <!-- Vendor Libraries read from CDN -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/css/blog.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/css/query.css">
+    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/balloon.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/animate.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/lity.min.css">
+    
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/lib/images/favicon-32x32.png" sizes="32x32">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed|Bungee+Shade" rel="stylesheet">    
 </head>
 <body>
     
-    <!-- nav -->
+    <!-- Nav -->
     <nav role="navigation">
         <div id="menuToggle">
             <input type="checkbox" id="hmbgr"/>
@@ -55,7 +61,7 @@
             <a href="#">&#8609;</a>
         </div>
         <div id="skillsets">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/skillsets-min.png"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/skillsets-min.png"/>
         </div>
     </div>
     
@@ -65,8 +71,8 @@
         <!-- About Me --> 
         <div class="slides" id="about">
             <h1>I am...</h1>
-            <img id="bgImage" src="<?php echo get_template_directory_uri(); ?>/images/bg-glass.png"/>       
-            <img id="profile" src="<?php echo get_template_directory_uri(); ?>/images/thumbs/profile1.jpg" />
+            <img id="bgImage" src="<?php echo get_template_directory_uri(); ?>/lib/images/bg-glass.png"/>       
+            <img id="profile" src="<?php echo get_template_directory_uri(); ?>/lib/images/profile.jpg" />
             
             <div data-emergence="hidden" class="text-profile balloon">
                 I am a web developer, photographer, video editor, snowboarder, and traveller. My focus in coding is to create user-friendly, intuitive, and functional design for websites and web applications. In the past projects, I worked on UI/UX helping to have a better navigation and to make the site more informative for targeted users. Besides the coding, I enjoy experiencing a new culture and learn about their history by travelling and taking photos. The languages I'm familiar are HTML5/CSS3, Javascript, jQuery, PHP, Python, and Ruby on Rails.
@@ -89,7 +95,7 @@
                 <!--img row-->
                 <tr>
                     <td><a href="#">Simple Parallax Website</a></td>
-                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot.png"/ alt="img1"></td>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot.png"/ alt="img1"></td>
                     
                     <td><p>Parallax Web site template designed for simple use as introductory page for small business owners.</p></td>
                     <td>
@@ -102,7 +108,7 @@
                 <!-- title -->
                 <tr>
                     <td><a href="#">Student Queue Project</a></td>
-                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/thumb1.png"/ alt="img2"></td>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot2.png"/ alt="img2"></td>
                     <td><p>A web application developed to provide efficient support in communication between students and teachers. </p></td>
                     <td>
                         <button class="image-button light outline">
@@ -113,8 +119,8 @@
                 </tr>
                 <!-- link -->
                 <tr>
-                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/">Capstone Project</a></td>
-                    <td><img src="<?php echo get_template_directory_uri(); ?>/images/thumbs/screenshot2.png"/ alt="img3"></td>
+                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/" target="_blank">Capstone Project</a></td>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot3.png"/ alt="img3"></td>
                     <td><p>Introductry page for capstone project 2017.</p></td>
                     <td>
                         <button class="image-button light outline">
@@ -130,30 +136,30 @@
         <div class="slides clear" id="videos">
             <h1>Video & Photo Editing</h1>
             <div class="tiles-grid size-lg-6">
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile1.JPG" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile1.jpg" ></div>
                 
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-down">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
                         <span class="mif-infinite icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/tiles/tile5.jpg" class="h-100 w-100">
+                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile5.jpg" class="h-100 w-100">
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile2.JPG" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile2.jpg" ></div>
             
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-left">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
                         <span class="mif-cross icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/tiles/tile4.jpg" class="h-100 w-100">
+                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile4.jpg" class="h-100 w-100">
                     </div>
                 </div>
                 
                 <div data-role="tile" data-size="large" class="bg-light" 
-                data-vide-bg="<?php echo get_template_directory_uri(); ?>/images/tiles/tile.mp4" >
+                data-vide-bg="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile.mp4" >
                      <div class="pressMe fg-dark d-flex flex-justify-center flex-align-center">
                         <p class="text-center ">
                             Press Me!
@@ -166,22 +172,22 @@
                         <span class="mif-minus icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/tiles/tile3.jpg" class="h-100 w-100">
+                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile3.jpg" class="h-100 w-100">
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile7.jpg" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile7.jpg" ></div>
                 
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-up">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
                         <span class="mif-checkmark icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/tiles/tile6.jpg" class="h-100 w-100">
+                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile6.jpg" class="h-100 w-100">
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/images/tiles/tile9.jpg" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile8.jpg" ></div>
             </div>
         </div>
         
@@ -210,13 +216,14 @@
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/emergence.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/separate.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/floating_text.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/parallax.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/Vide-master/dist/jquery.vide.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/emergence.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/jquery.vide.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/lity.min.js"></script>
+    
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/lib/js/separate.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/lib/js/parallax.js"></script>
+    
     <script>
     /*global emergence*/
         emergence.init();
