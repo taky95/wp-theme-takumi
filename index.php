@@ -161,7 +161,7 @@
             </div>
             <button class="image-button">
                 <span class="mif-camera icon"></span>
-                <span class="caption"><a href="<?php echo get_permalink(get_page_by_title('gallery'))?>" target="_blank">Check more photos -></a></span>
+                <span class="caption"><a href="<?php echo get_permalink(get_page_by_title('gallery'))?>" target="_blank">Get free photos! -></a></span>
             </button>
         </div>
         

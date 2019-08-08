@@ -27,6 +27,8 @@ body{
     clear: both;
 }
 
+.tab{ margin-left: 40px;}
+
 nav{
     height: 0px;
 }
@@ -316,7 +318,6 @@ hr:after {
 
 .text-profile{
     position: relative;
-    z-index: 1;
     top: -350px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 120%;
@@ -382,15 +383,15 @@ hr:after {
 }
 
 #videos button{
-    width: 50%;
+    width: 30%;
     margin-top: 50px;
-    background-color: lightsteelblue;
-    -webkit-transition: background-color,width 1s;
-    -webkit-transition: width 1s;
-    transition: width 1s;
+    background-color: #1A232E;
+    -webkit-transition: background-color .5s, width 1s ease-in;
+    transition: background-color .5s, width 1s ease-in;
 }
 
 #videos button:hover{
+    background-color: #707f90;
     width: 100%;
 }
 
@@ -478,6 +479,16 @@ td > p {
     margin-top: 50px;
 }
 
+#credit-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#credit{
+    width: 50%;
+}
+
 .gallery-row{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -491,7 +502,6 @@ td > p {
     -ms-flex: 50%;
     flex: 50%;
 }
-
 
 .img-container {
 	-ms-flex-preferred-size: 50%;
@@ -512,13 +522,27 @@ td > p {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)),color-stop(40%, rgba(255,255,255,1)),to(rgba(255,255,255,0))), url("lib/images/background-g.png") 73% repeat;
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%), url("lib/images/background-g.png") 73% repeat;
     padding: 1% 5% 5% 5%;
-    
 }
 
 #license-text{
     background-color: #efefef;
     border-radius: 5px;
     padding: 5%;
+}
+
+#license-text button{
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    color: #363636;
+    -webkit-transition: background-color 1s, color 1s;
+    -webkit-transition: background-color .5s, color .5s;
+    transition: background-color .5s, color .5s;
+    height: 36px;
+}
+
+#license-text button:hover{
+    background-color: #404040;
+    color: #f8f8f8;
 }
 
 .gallery-back h1{
@@ -546,7 +570,7 @@ td > p {
 
 .image-overlay a{
 	z-index: 2;
-    margin: 10%;
+    margin: 4%;
     background-color: rgba(0, 60, 157, 0.2);
     -webkit-transition: background-color 1s ease;
     transition: background-color 1s ease;
@@ -558,4 +582,16 @@ td > p {
 
 .image-overlay {
 	background-color: rgba(2, 22, 67, 0.5) !important;
+}
+
+.button-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }

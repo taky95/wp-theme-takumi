@@ -4,19 +4,55 @@ Template Name: Gallery
 */
 ?>
 <?php get_header(); ?>
+<script>
+    function copyText(){
+      var copyText = document.getElementById("credit");
+
+      /* Select the text field */
+      copyText.select();
+
+      /* Copy the text inside the text field */
+      document.execCommand("copy");
+
+      /* Alert the copied text */
+      alert("Copied the text: " + copyText.value);
+    }
+</script>
+
 <div class="content gallery-back">
     <h1><?php echo get_the_title(); ?></h1>
     
-    <p id="license-text"> 
-        Takmi's free photo project by Takumi<br/>
+    <div id="license-text"> 
+        <h3>Welcome to my free photo project.</h3>
         <br/>
-        To the extent possible under law, the person who associated CC0 with
-        Takumi's portfolio has waived all copyright and related or neighboring rights<br/>
-        to Takumi's portfolio.
+        <h4>What's the project about?</h4>
+        <p class="tab">
+            I love taking photos when I go travelling and do some activities. I also like web development, and in that, free photos come in really handy. As much as I like using my own photos on my projects, I have used many great free photos from talented creators. So, this is my way of thanking those others and I hope these photos will be something useful to whom in need for their contents.
+        </p><br/>
+        <h4>How to use?</h4>
+        <p class="tab">
+            All photos here in this page is under CC4.0, which means you can use it however you want, as long as you credit me on your project. To credit me you can copy and paste the link tag below. I hope you find something you like here.<br/>
+            <br/>
+        </p>
+        <div id="credit-wrap">
+            <input type="text" name="credit_text" value="<a href=&quot;http://takumiminohara.site/&quot;>&copy;Takumi.M - 2019</a>" id="credit" readonly>
+            <button onclick="copyText()">Copy</button>
+        </div>
+        
+        <br/>
+        <h4>License</h4>
+        <p class="tab">
+            Tak's-free-photo-project &copy; by Takumi.M<br/>
+            <br/>
+            Tak's-free-photo-project is licensed under a
+            Creative Commons Attribution-ShareAlike 4.0 International License.<br/>
+            <br/>
+            You should have received a copy of the license along with this
+            work.  If not, see <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">http://creativecommons.org/licenses/by-sa/4.0/</a>.
+        </p>
         <br/><br/>
-        You should have received a copy of the CC0 legalcode along with this
-        work.  If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
-    </p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </div>
 <?php
 	
 		
@@ -40,15 +76,21 @@ Template Name: Gallery
                 <?php $count=0; ?>
                 <?php foreach($images as $image){ ?>
                     <div class="img-container thumbnail" data-emergence="hidden">
-                        <img src="<?php echo $image->guid; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
-
+                        
+                            <img src="<?php echo $image->guid; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
+                        
+                        
                         <div class="image-overlay">
                             <h2 class="text-light"><?php echo $image->post_title; ?></h2>
                             <p>
                                 <?php echo $image -> post_content; ?>
                             </p>
-                            <a class="button rounded" href="<?php echo $image->guid;?>" download>Download</a>
+                            <div class="button-wrapper">
+                                <a class="button rounded" href="<?php echo $image->guid;?>" download>Download</a>
+                                <a class="button rounded" href="<?php echo $image->guid; ?>" data-lity>Show</a>
+                            </div>
                         </div>
+                        
                     </div>
                 <?php $count++;
                     if($count==5){?>
