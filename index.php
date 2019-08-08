@@ -1,57 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143414626-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-143414626-1');
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a Takumi Minohara's personal portfolio website.">
-    
-    <title><?php bloginfo('name');?></title>
-    
-    <!-- Vendor Libraries read from CDN -->
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/css/blog.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/css/query.css">
-    
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/balloon.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/lity.min.css">
-    
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/lib/images/favicon-32x32.png" sizes="32x32">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed|Bungee+Shade" rel="stylesheet">    
-</head>
-<body>
-    
-    <!-- Nav -->
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox" id="hmbgr"/>
-            
-            <span></span>
-            <span></span>
-            <span></span>
-            
-            <ul id="menu">
-                <a href="#" id="link1"><li>About</li></a>
-                <a href="#" id="link2"><li>Works</li></a>
-                <a href="#" id="link3"><li>Videos & Photos</li></a>
-                <a href="#" id="link4"><li>Contact</li></a>
-            </ul>
-        </div>
-    </nav>
+<?php get_header(); ?>
     
     <div id="main">
         <h1 id="myName">
@@ -136,25 +83,36 @@
         <div class="slides clear" id="videos">
             <h1>Video & Photo Editing</h1>
             <div class="tiles-grid size-lg-6">
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile1.jpg" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile1.jpg" >
+                        <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile1.jpg" data-lity>
+                            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile1.jpg" class="h-100 w-100">
+                        </a> 
+                </div>
                 
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-down">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
                         <span class="mif-infinite icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile5.jpg" class="h-100 w-100">
+                        <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile5.jpg" data-lity>
+                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile5.jpg" class="h-100 w-100"></a>
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile2.jpg" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile2.jpg" >
+                        <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile2.jpg" data-lity>
+                            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile2.jpg" class="h-100 w-100">
+                        </a>
+                </div>
             
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-left">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
                         <span class="mif-cross icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile4.jpg" class="h-100 w-100">
+                        <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile4.jpg" data-lity>
+                            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile4.jpg" class="h-100 w-100">
+                        </a>
                     </div>
                 </div>
                 
@@ -172,23 +130,39 @@
                         <span class="mif-minus icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile3.jpg" class="h-100 w-100">
+                        <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile3.jpg" data-lity>
+                            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile3.jpg" class="h-100 w-100">
+                        </a>
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile7.jpg" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile7.jpg" >
+                    <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile7.jpg" data-lity>
+                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile7.jpg" class="h-100 w-100">
+                    </a>
+                </div>
                 
                 <div data-role="tile" data-size="large" class="bg-light" data-effect="hover-slide-up">
                     <div class="slide-front d-flex flex-justify-center flex-align-center p-4 ">
                         <span class="mif-checkmark icon fg-dark"></span>
                     </div>
                     <div class="slide-back">
-                        <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile6.jpg" class="h-100 w-100">
+                        <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile6.jpg" data-lity>
+                            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile6.jpg" class="h-100 w-100">
+                        </a>
                     </div>
                 </div>
                 
-                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile8.jpg" ></div>
+                <div data-role="tile" data-size="large" data-cover="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile8.jpg" >
+                    <a href="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile8.jpg" data-lity>
+                            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/tiles/tile8.jpg" class="h-100 w-100">
+                        </a>
+                </div>
             </div>
+            <button class="image-button">
+                <span class="mif-camera icon"></span>
+                <span class="caption"><a href="<?php echo get_permalink(get_page_by_title('gallery'))?>" target="_blank">Check more photos -></a></span>
+            </button>
         </div>
         
         <!-- Contact From -->
@@ -208,25 +182,4 @@
         </div> 
     </div><!-- End of Content -->     
     
-    <!-- Footer -->
-    <div id="copyright">
-        <p>&copy;2018 Takumi</p>
-    </div>
-    
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/emergence.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/jquery.vide.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/vendor/js/lity.min.js"></script>
-    
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/lib/js/separate.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/lib/js/parallax.js"></script>
-    
-    <script>
-    /*global emergence*/
-        emergence.init();
-    </script>
-</body>
-</html>
+<?php get_footer(); ?>

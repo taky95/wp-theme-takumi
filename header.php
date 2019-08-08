@@ -1,40 +1,56 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143414626-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<meta charset="utf-8">  
-<title><?php wp_title(' | ', true, 'right');?><?php bloginfo('name');?></title>  
-<meta name="description" content="Takumi's portfolio website." /> 
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon-32x32.png" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" media="all" />
-<?php wp_deregister_script('jquery'); ?>
-<?php wp_head(); ?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slide.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/scroll.js"></script>
-<link href="<?php echo get_stylesheet_directory_uri(); ?>/js/lity-2.3.1/dist/lity.css" rel="stylesheet">
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/lity-2.3.1/vendor/jquery.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/lity-2.3.1/dist/lity.js"></script>
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Roboto+Mono:300|Ubuntu');
-</style>
-
-</head>  
-<script>
-    /* global $ */
-    /* global lity */
-    // Open a URL in a lightbox
-    var lightbox = lity('//www.youtube.com/watch?v=XSGBVzeBUbk');
+      gtag('config', 'UA-143414626-1');
+    </script>
     
-    // Bind as an event handler
-    $(document).on('click', '[data-lightbox]', lity);
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Takumi Minohara's personal portfolio website.">
+    
+    <title><?php bloginfo('name');?></title>
+    
+    <!-- Vendor Libraries read from CDN -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/css/query.css">
+    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/balloon.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/animate.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/css/lity.min.css">
+    
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/lib/images/favicon-32x32.png" sizes="32x32">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed|Bungee+Shade" rel="stylesheet">    
+</head>
 <body>
-    <?php get_template_part('nav'); ?>
-    <div id ="header">  
-        <img class="slideshow" src="<?php echo get_stylesheet_directory_uri(); ?>/images/header1.jpg" />
-        <img class="slideshow" src="<?php echo get_stylesheet_directory_uri(); ?>/images/header2.jpg" />
-        <img class="slideshow" src="<?php echo get_stylesheet_directory_uri(); ?>/images/header3.jpg" />
-    </div>
+    
+    <!-- Nav -->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" id="hmbgr"/>
+            
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+                <a href="#" id="link1"><li>About</li></a>
+                <a href="#" id="link2"><li>Works</li></a>
+                <a href="#" id="link3"><li>Videos & Photos</li></a>
+                <a href="#" id="link4"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
