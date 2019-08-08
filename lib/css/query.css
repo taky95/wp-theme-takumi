@@ -5,7 +5,7 @@
     }
 }
 
-/* Big tablet to 1200px to (width samll than the 1140px row) */
+/* Big tablet to 1200px to (width samller than the 1140px row) */
 @media only screen and (max-width: 1200px){
     .text-profile {
 	   margin-top: 200px;
@@ -88,7 +88,9 @@
         font-size: 350%;
     }
     
-    
+    #scrollTop {
+	   top: 900px;
+    }
 }
 
 

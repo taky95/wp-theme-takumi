@@ -46,11 +46,15 @@
             <span></span>
             <span></span>
             
-            <ul id="menu">
+            <ul id="menu">    
+            <?php if( is_home() ) {?>            
                 <a href="#" id="link1"><li>About</li></a>
                 <a href="#" id="link2"><li>Works</li></a>
                 <a href="#" id="link3"><li>Videos & Photos</li></a>
                 <a href="#" id="link4"><li>Contact</li></a>
+            <?php }else{?>
+                <a href="<?php echo esc_url( home_url('/') );?>"><li>← Go back to the top page</li></a>
+             <?php } ?>   
             </ul>
         </div>
     </nav>
