@@ -27,15 +27,15 @@ Template Name: Gallery
         <br/>
         <h4>What's the project about?</h4>
         <p class="tab">
-            I love taking photos when I go travelling and do some activities. I also like web development, and in that, free photos come in really handy. As much as I like using my own photos on my projects, I have used many great free photos from talented creators. So, this is my way of thanking those others and I hope these photos will be something useful to whom in need for their contents.
+            The part of the reason I started taking photos was to have quality picture I can use freely for my web projects and apps. I used to have really hard time finding right free photo I want to use which doesn't violate the copyright. In recent years, lots of talented photographers have started sharing thier awesome projects for free as creative commons and, now, as much as I enjoy using them, I would love to contribute back to the community by sharing some of my photos as well. For me, taking photos became something I enjoy whenever I go travelling or do some activities with friends, and these are some of those my best shots. If someone in need could find some use in my photos, that would be my pleasure.   
         </p><br/>
         <h4>How to use?</h4>
         <p class="tab">
-            All photos here in this page is under CC4.0, which means you can use it however you want, as long as you credit me on your project. To credit me you can copy and paste the link tag below. I hope you find something you like here.<br/>
+            All photos here in this page is under CC4.0, which means you can use it however you want, as long as you credit me on your project. To credit me you can copy and paste the link tag below or have my name somewhere in your project. I hope you find something you like here.<br/>
             <br/>
         </p>
         <div id="credit-wrap">
-            <input type="text" name="credit_text" value="<a href=&quot;http://takumiminohara.site/&quot;>&copy;Takumi.M - 2019</a>" id="credit" readonly>
+            <input type="text" name="credit_text" value="<a href=&quot;https://takumiminohara.site/&quot;>&copy;Takumi.M - 2019</a>" id="credit" readonly>
             <button onclick="copyText()">Copy</button>
         </div>
         
