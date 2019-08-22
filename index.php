@@ -41,7 +41,7 @@
             <table id="websites" data-emergence="hidden" class="table row-border">
                 <!--img row-->
                 <tr>
-                    <td><a href="#">Simple Parallax Website</a></td>
+                    <td>Simple Parallax Website</td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot.png"/ alt="img1"></td>
                     
                     <td><p>Parallax Web site template designed for simple use as introductory page for small business owners.</p></td>
@@ -50,29 +50,46 @@
                             <span class="mif-github icon"></span>
                             <span class="caption"><a href="https://github.com/taky95/simple-parallax-website-template" target="_blank">Git Hub</a></span>
                         </button>
+                        
+                        <button class="image-button light outline">
+                            <span class="mif-file-code icon"></span>
+                            <span class="caption"><a href="https://test.takumiminohara.site" target="_blank">Demo</a></span>
+                        </button>
                     </td>
                 </tr>
                 <!-- title -->
                 <tr>
-                    <td><a href="#">Student Queue Project</a></td>
+                    <td>Student Queue Project</td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot2.png"/ alt="img2"></td>
-                    <td><p>A web application developed to provide efficient support in communication between students and teachers. </p></td>
+                    <td><p>A web application developed to provide efficient support in communication between students and teachers. <br/><br/>
+                    For demo purpose, sample users are provided. To log in as an instructor, use "C0000001", and use "C0000002" to log in as a student.      
+                    </p></td>
                     <td>
-                        <button class="image-button light outline">
-                            <span class="mif-github icon"></span>
-                            <span class="caption"><a href="https://github.com/ARealHumanBean/student-queue-project" target="_blank">Git Hub</a></span>
-                        </button>
+                            <button class="image-button light outline">
+                                <span class="mif-github icon"></span>
+                                <span class="caption"><a href="https://github.com/ARealHumanBean/student-queue-project" target="_blank">Git Hub</a></span>
+                            </button>
+
+                            <button class="image-button light outline">
+                                <span class="mif-file-code icon"></span>
+                                <span class="caption"><a href="https://rails.takumiminohara.site" target="_blank">Demo</a></span>
+                            </button>
                     </td>
                 </tr>
                 <!-- link -->
                 <tr>
-                    <td><a href="http://capstone.camosun.ca/archived-capstone/June2017/" target="_blank">Capstone Project</a></td>
+                    <td>Capstone Project</td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot3.png"/ alt="img3"></td>
                     <td><p>Introductry page for capstone project 2017.</p></td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-gitlab icon"></span>
                             <span class="caption"><a href="https://gitlab.com/camosunwebcommittee/tech-symposium" target="_blank">Git Lab</a></span>
+                        </button>
+                        
+                        <button class="image-button light outline">
+                            <span class="mif-file-code icon"></span>
+                            <span class="caption"><a href="http://capstone.camosun.ca/archived-capstone/June2017/" target="_blank">Demo</a></span>
                         </button>
                     </td>
                 </tr>

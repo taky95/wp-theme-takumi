@@ -361,6 +361,15 @@ hr:after {
     border-right: 0px;
 }
 
+#websites p{
+    text-align: left;
+}
+
+#websites td>button{
+    margin: 5px;
+    
+}
+
 
 #websites img{
     width:90%;
