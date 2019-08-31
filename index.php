@@ -77,14 +77,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>SPA-react-website</td>
+                    <td>SPA react website</td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot4.png"/ alt="img4"></td>
                     
                     <td><p>SPA web site that has smooth UI/transition through out the pages. It is fully responsive and mobile friendly.  Targetting small business owners.</p></td>
                     <td>
                         <button class="image-button light outline">
                             <span class="mif-github icon"></span>
-                            <span class="caption"><a href="https://github.com/taky95/https://github.com/taky95/spa-react-template" target="_blank">Git Hub</a></span>
+                            <span class="caption"><a href="https://github.com/taky95/spa-react-template.git" target="_blank">Git Hub</a></span>
                         </button>
                         
                         <button class="image-button light outline">
