@@ -57,7 +57,7 @@
                         </button>
                     </td>
                 </tr>
-                <!-- title -->
+                
                 <tr>
                     <td>Student Queue Project</td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot2.png"/ alt="img2"></td>
@@ -76,7 +76,23 @@
                             </button>
                     </td>
                 </tr>
-                <!-- link -->
+                <tr>
+                    <td>SPA-react-website</td>
+                    <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot4.png"/ alt="img4"></td>
+                    
+                    <td><p>SPA web site that has smooth UI/transition through out the pages. It is fully responsive and mobile friendly.  Targetting small business owners.</p></td>
+                    <td>
+                        <button class="image-button light outline">
+                            <span class="mif-github icon"></span>
+                            <span class="caption"><a href="https://github.com/taky95/https://github.com/taky95/spa-react-template" target="_blank">Git Hub</a></span>
+                        </button>
+                        
+                        <button class="image-button light outline">
+                            <span class="mif-file-code icon"></span>
+                            <span class="caption"><a href="https://react.takumiminohara.site" target="_blank">Demo</a></span>
+                        </button>
+                    </td>
+                </tr>
                 <tr>
                     <td>Capstone Project</td>
                     <td><img src="<?php echo get_template_directory_uri(); ?>/lib/images/thumbs/screenshot3.png"/ alt="img3"></td>
